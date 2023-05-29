@@ -33,34 +33,61 @@ npm install
  
  # Directory Structure
  
+ ```
  Authentication-App
     |-----assets
     |       |--- css
-    |       |     |-- habit.css
-    |       |     |-- home.css
+    |       |     |-- email_verify.css
+    |       |     |-- header.css
     |       |     └-- layout.css
-    |       |--- js
-    |       |     |-- habit.js
-    |       |     └-- moment.js
+    |       |     |-- user_signin.css
+    |       |     |-- user_signup.css
+    |       |
     |       |--- sass
-    |             |-- habit.scss
-    |             |-- home.scss
+    |             |-- email_verify.scss
+    |             |-- header.scss
     |             └-- layout.scss
+    |             |-- user_signin.scss
+    |             |-- user_signup.scss
     |------ config
     |         └--- mongoose.js
+    |         |--- kue.js
+    |         |--- middleware.js
+    |         |--- mongoose.js
+    |         |--- nodemailer.js
+    |         |--- passport-google-oauth-strategy.js
+    |         |--- passport-local.js
+    |
     |------ controllers
-    |         └--- habit_controllers.js
+    |         └--- home_controllers.js
+    |         |--- user_controller.js
+    |
     |------ models
-    |         └--- habit.js
-    |------ routers
+    |         └--- user.js
+    |         |--- token.js
+    |
+    |------ routes
     |         └--- index.js
+    |         |--- user.js
+    |
+    |------ mailers
+    |         |--- reset_password_mailer.js
+    |
     |------ views
-    |         |--- habit..ejs
+    |         |--- mailers
+    |         |      |--- reset
+    |         |              |--- reset_password.js
+    |         |--- _header.ejs
     |         |--- home.ejs
     |         └--- layout.ejs
+    |         |--- email_verify.ejs
+    |         |--- reset_password_form.ejs
+    |         |--- user_signin.ejs
+    |         |--- user_signup.ejs
+    |
     |------ .gitignore
-    |------ app.js
+    |------ index.js
     |------ package.json
     |------ package-lock.json
     └------ README.md
-
+```
