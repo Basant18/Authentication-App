@@ -1,0 +1,18 @@
+header{
+    width: 100%;
+    background-color: lightblue;
+    h1{
+        display: inline;
+        width: 70%
+    }
+    a{
+        display: block;
+    }
+    #name{
+        text-align: right;
+    }
+    #link{
+        margin: 10px;
+        text-align: right;
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "nodejs_authentication",
+  "version": "1.0.0",
+  "description": "NodeJS Authentication App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "sass": "sass --watch --no-source-map assets/scss/:assets/css/"
+  },
+  "keywords": [
+    "authentication",
+    "passport",
+    "kue"
+  ],
+  "author": "Basant Singh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "kue": "^0.11.6",
+    "mongoose": "^7.2.1",
+    "nodemailer": "^6.9.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "sass": "^1.62.1"
+  }
+}

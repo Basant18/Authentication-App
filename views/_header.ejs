@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+    <h1 id = "page">Node Authentication App</h1>
+    <% if (locals.user){ %>
+        <p id="name"><%= user.name %></p>
+        <a id="link" href="/user/signOut">Sign Out</a>
+    <% } else{ %>
+        <a id="link" href="/user/signIn">Sign In</a>
+        <a id="link" href="/user/signUp">Sign Up</a>
+    <% } %>    
+</header>
